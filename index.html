@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Html S.A 4/title</title>
+  <style>
+    h1 {
+      border: 2px solid black;
+      padding: 30px;
+      text-align: center;
+    }
+
+    li {
+      font-size: 25px;
+    }
+
+    a {
+      font-size: 20px;
+      color: #b1afaf;
+    }
+
+    hr {
+      border: 1px solid black;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 2px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #dddddd;
+    }
+
+    tr:nth-child(even) {
+      background-color: white;
+    }
+
+    button {
+      width: 200px;
+      height: 100px;
+      font-size: 24px;
+      background-color: white;
+      color: black;
+    }
+
+    button:hover {
+      background-color: black;
+      color: white;
+      font-weight: bold;
+    }
+
+    @media (min-width: 700px) {
+      body {
+        background-color: white;
+      }
+    }
+
+    @media (max-width: 699px) {
+      body {
+        background-color: black
+      }
+
+      a {
+        font-size: 20px;
+        color: #dadada;
+      }
+
+      li {
+        font-size: 25px;
+        color: white;
+      }
+
+      h1 {
+        color: white;
+        border: 2px solid white
+      }
+
+      h2 {
+        color: white;
+      }
+
+      hr {
+        border: 1px solid white;
+      }
+
+    }
+  </style>
+</head>
+
+
+<h1><b>Fruits loved by the class</b></h1>
+<hr>
+<hr>
+
+<h2>List of fruits</h2>
+<ol>
+  <li>Apples
+    <ul>
+      <li>Red Apples
+      <li>Green Aplles
+    </ul>
+  <li> Bananas
+    <ul>
+      <li>Red Bananas
+      <li>Yellow Bananas
+    </ul>
+</ol>
+
+<img src="https://www.caloriesecrets.net/wp-content/uploads/2018/05/apples-vs-bananas.jpg" usemap="#image-map">
+
+<map name="image-map">
+  <area target="_blank" alt="Apple" title="Apple" href="https://en.wikipedia.org/wiki/Apple" coords="657,358,378,98"
+    shape="rect">
+  <area target="_blank" alt="Banana" title="Banana" href="https://en.wikipedia.org/wiki/Banana" coords="383,356,45,76"
+    shape="rect">
+</map>
+</map>
+<br><br>
+
+<a href="https://en.wikipedia.org/wiki/Apple">More about </a>
+<br>
+<a href="https://en.wikipedia.org/wiki/Banana"> More about bananas</a>
+<br><br>
+
+
+
+<table>
+  <tr>
+    <th>Fruits</th>
+    <th>No. of people who like the fruit</th>
+  </tr>
+  <tr>
+    <td>Red applpe</td>
+    <td>Rich in in fiber, protien and Vit K </td>
+
+  </tr>
+  <tr>
+    <td>Green apple</td>
+    <td>Rich in potassium, iron and Vit A</td>
+
+  </tr>
+  <tr>
+    <td>Yellow banana</td>
+    <td>Rich in potassium and antioxidants</td>
+
+  </tr>
+  <tr>
+    <td>Red banana</td>
+    <td>Rich in carbs and iron </td>
+
+  </tr>
+</table>
+<br><br>
+
+<button type="button" id="Text going to change" onclick="Changetext()">Click Me!</button>
+
+<script>
+  function Changetext() {
+    document.getElementById("Text going to change").innerHTML = "Noice";
+  }
+</script>
+
+</body>
+
+</html>
