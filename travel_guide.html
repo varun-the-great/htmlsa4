@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+<style>
+    @media (min-width: 768px) {
+        hr {
+            margin-left: 180px; 
+            width: 1100px;
+        }
+    }
+    @media (max-width: 768px) {
+        hr {
+            margin-left: 0px; 
+            width: auto;
+        }
+    }
+
+</style>
+</head>
+
+<body class="bg-grey-500">
+
+  <div class="flex flex-row p-6">
+    <a href="file:///Users/iavian/Desktop/Koli/index.html"> <img src="logo.png" style="width: 100px; height: 100px;" alt="logo" class="mt-5"> </a>
+    <div class="fixed right-0 mr-16 md:relative max-h-14 z-10 rounded-lg mt-10 md:ml-5 md:shadow-lg  md:visible flex flex-col ml-10 md:flex-row invisible" id="myTopnav">
+      <a href="file:///Users/iavian/Desktop/Koli/index.html" class=" hover:text-green-700 p-4 bg-white text-black md:rounded-bl-lg md:rounded-tl-lg rounded-tr-lg rounded-tl-lg md:rounded-r-none md:border-r md:border-l border-l border-t border-r border-b">Home</a>
+       <a href="file:///Users/iavian/Desktop/Koli/tourist_attractions.html" class="hover:text-green-700 bg-white text-black p-4 md:border-r border-b">Tourist attractions</a>
+       <a href="file:///Users/iavian/Desktop/Koli/travel_guide.html" class="bg-green-700 text-white p-4">Travel guide</a>
+       <a href="#contact" class="hover:text-green-700 bg-white text-black p-4 md:border-r border-b">Hotels/Hospitals</a>
+       <a href="#contact" class="hover:text-green-700 bg-white text-black p-4 md:border-r border-b">Products</a>
+       <a href="#about" class="hover:text-green-700 bg-white text-black p-4 md:border-r border-b rounded-bl-lg rounded-br-lg md:rounded-tr-lg md:rounded-bl-none"> Contact us</a>
+    </div>
+    <i class="fa fa-bars pt-16 pr-10 visible md:hidden fixed right-0 hover:text-green-700" onclick="toggleMenu()"></i>
+  </div>
+
+<div class="text-6xl md:text-7xl font-extrabold text-center pb-0">
+<span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-700" style="font-family: 'Noto Sans JP', sans-serif;">
+Travel guide
+</span>
+</div>
+<hr style="border-color: #34D399;  border-width: 0.7rem; margin-top: -11px;">
+
+<script>
+
+module.exports = {
+    theme: {
+      fontSize: {
+        'xs': '.75rem',
+        'sm': '.875rem',
+        'tiny': '.875rem',
+        'base': '1rem',
+        'lg': '1.125rem',
+        'xl': '1.25rem',
+        '2xl': '1.5rem',
+        '3xl': '1.875rem',
+        '4xl': '2.25rem',
+        '5xl': '3rem',
+        '6xl': '4rem',
+       '7xl': '5rem',
+      }
+    }
+  }
+
+function toggleMenu() {
+  var x = document.getElementById("myTopnav");
+  if (x.className.includes(" visible")) {
+    x.className = x.className.replace(" visible", " invisible")
+  } else {
+    x.className = x.className.replace(" invisible", " visible")
+  }
+}
+</script>
+
+</body>
+
+</html>
